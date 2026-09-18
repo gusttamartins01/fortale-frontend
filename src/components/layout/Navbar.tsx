@@ -1,15 +1,44 @@
 import { User } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 
 export default function Navbar() {
+	const location = useLocation();
+	const isHome = location.pathname === '/home';
+	const [hasReachedAbout, setHasReachedAbout] = useState(false);
+
+	useEffect(() => {
+		if (!isHome) {
+			return;
+		}
+
+		const handleScroll = () => {
+			setHasReachedAbout(window.scrollY >= window.innerHeight - 80);
+		};
+
+		handleScroll();
+		window.addEventListener('scroll', handleScroll);
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [isHome]);
+
+	const isTransparent = isHome && !hasReachedAbout;
 	const getLinksStyle = ({ isActive }: { isActive: boolean }) =>
 		isActive
 			? 'text-amber-500 font-semibold'
-			: 'text-gray-100 hover:text-amber-400 transition-colors';
+			: isTransparent
+				? 'text-gray-100 hover:text-amber-400 transition-colors'
+				: 'text-white hover:text-amber-300 transition-colors';
 
 	return (
-		<header className="fixed bg-transparent top-0 z-20 w-full border-b border-white/10 backdrop-blur-md">
+		<header
+			className={`fixed top-0 z-20 w-full border-b backdrop-blur-md ${
+				isTransparent
+					? 'border-white/10 bg-transparent'
+					: 'border-blue-700 bg-blue-600 '
+			}`}
+		>
 			<div className="max-w-7xl  mx-auto px-4 h-20 flex items-center justify-between">
 				<NavLink
 					to="/home"
@@ -54,7 +83,7 @@ export default function Navbar() {
 				>
 					<User
 						size={26}
-						className="text-gray-200 hover:text-amber-500 cursor-pointer"
+						className="cursor-pointer text-gray-200 hover:text-amber-500"
 					/>
 				</NavLink>
 			</div>
