@@ -9,7 +9,7 @@ export default function Navbar() {
 			: 'text-gray-100 hover:text-amber-400 transition-colors';
 
 	return (
-		<header className="absolute bg-transparent top-0 z-20 w-full border-b border-white/10 backdrop-blur-md">
+		<header className="fixed bg-transparent top-0 z-20 w-full border-b border-white/10 backdrop-blur-md">
 			<div className="max-w-7xl  mx-auto px-4 h-20 flex items-center justify-between">
 				<NavLink
 					to="/home"
