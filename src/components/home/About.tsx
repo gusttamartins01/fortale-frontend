@@ -44,7 +44,7 @@ export default function About() {
 	};
 
 	return (
-		<section className="h-auto w-full bg-gray-100 pt-10 pb-24">
+		<section className="h-auto w-full bg-gray-100 pt-10 pb-28">
 			<div className="mx-16 mt-16 flex items-center justify-start text-center">
 				<h2 className="rounded-t-2xl border-l-4 border-amber-600 pb-1 pl-5 pt-5 text-4xl font-bold text-amber-600">
 					O que é o Fortalê?
@@ -53,7 +53,7 @@ export default function About() {
 
 			<div className="mx-16 mt-6 grid grid-cols-2 items-center gap-10">
 				<div className="flex w-full flex-col justify-center">
-					<p className="text-lg font-semibold text-gray-700">
+					<p className="text-2xl font-normal text-gray-700">
 						O Fortalê nasceu com a ideia de tornar mais fácil descobrir e
 						aproveitar tudo o que Fortaleza e sua região metropolitana têm a
 						oferecer. Em um só lugar, você pode encontrar lugares, eventos,
@@ -61,7 +61,7 @@ export default function About() {
 						e estilos.
 					</p>
 
-					<p className="mt-6 text-lg font-semibold text-gray-700">
+					<p className="mt-6 text-2xl font-normal text-gray-700">
 						Mais do que uma plataforma de lugares, o Fortalê é um espaço para
 						explorar a cidade, descobrir novos caminhos e encontrar novas
 						experiências. Seja para conhecer aquele lugar que você ainda não

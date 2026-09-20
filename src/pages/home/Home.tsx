@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
 import HomeImg from '../../assets/homeImg.png';
 import About from '../../components/home/About';
+import Contact from '../../components/home/Contact';
+import FAQ from '../../components/home/FAQ';
+import Features from '../../components/home/Features';
+import Inivation from '../../components/home/Inivitation';
+import PlatformOwner from '../../components/home/PlatformOwner';
+import Testimonial from '../../components/home/Testimonial';
 
 export default function Home() {
 	return (
 		<>
 			<section
-				className="relative min-h-screen bg-cover bg-center bg-no-repeat "
+				className="relative min-h-screen bg-cover bg-center bg-no-repeat shadow-2xl"
 				style={{ backgroundImage: `url(${HomeImg})` }}
 			>
 				<div className="pointer-events-none absolute inset-0 bg-black/30" />
@@ -36,6 +42,12 @@ export default function Home() {
 			</section>
 
 			<About />
+			<Features />
+			<PlatformOwner />
+			<Testimonial />
+			<FAQ />
+			<Inivation />
+			<Contact />
 		</>
 	);
 }

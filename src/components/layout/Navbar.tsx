@@ -5,7 +5,7 @@ import Logo from '../../assets/logo.png';
 
 export default function Navbar() {
 	const location = useLocation();
-	const isHome = location.pathname === '/home';
+	const isHome = location.pathname === '/';
 	const [hasReachedAbout, setHasReachedAbout] = useState(false);
 
 	useEffect(() => {
@@ -36,12 +36,12 @@ export default function Navbar() {
 			className={`fixed top-0 z-20 w-full border-b backdrop-blur-md ${
 				isTransparent
 					? 'border-white/10 bg-transparent'
-					: 'border-blue-700 bg-blue-600 '
+					: 'border-blue-800 bg-blue-700 '
 			}`}
 		>
 			<div className="max-w-7xl  mx-auto px-4 h-20 flex items-center justify-between">
 				<NavLink
-					to="/home"
+					to="/"
 					className="flex items-center transition duration-500 ease-in-out hover:scale-110 cursor-pointer"
 				>
 					<img
@@ -55,7 +55,7 @@ export default function Navbar() {
 
 				<div>
 					<nav className="flex items-center gap-6 text-lg font-medium">
-						<NavLink to={'/home'} className={getLinksStyle}>
+						<NavLink to={'/'} className={getLinksStyle}>
 							Início
 						</NavLink>
 
