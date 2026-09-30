@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
-import AboutImage from '../../assets/aboutImg.png';
-import AboutImage2 from '../../assets/aboutImg2.png';
-import AboutImage3 from '../../assets/aboutImg3.png';
-import AboutImage4 from '../../assets/aboutImg4.png';
-import AboutImage5 from '../../assets/aboutImg5.png';
-import AboutImage6 from '../../assets/aboutImg6.png';
-import AboutImage7 from '../../assets/aboutImg7.png';
-import AboutImage8 from '../../assets/aboutImg8.png';
-import AboutImage9 from '../../assets/aboutImg9.png';
-import AboutImage10 from '../../assets/aboutImg10.png';
+import AboutImage from '../../assets/aboutPlaces/aboutImg.png';
+import AboutImage2 from '../../assets/aboutPlaces/aboutImg2.png';
+import AboutImage3 from '../../assets/aboutPlaces/aboutImg3.png';
+import AboutImage4 from '../../assets/aboutPlaces/aboutImg4.png';
+import AboutImage5 from '../../assets/aboutPlaces/aboutImg5.png';
+import AboutImage6 from '../../assets/aboutPlaces/aboutImg6.png';
+import AboutImage7 from '../../assets/aboutPlaces/aboutImg7.png';
+import AboutImage8 from '../../assets/aboutPlaces/aboutImg8.png';
+import AboutImage9 from '../../assets/aboutPlaces/aboutImg9.png';
+import AboutImage10 from '../../assets/aboutPlaces/aboutImg10.png';
 
 const images = [
 	AboutImage,
