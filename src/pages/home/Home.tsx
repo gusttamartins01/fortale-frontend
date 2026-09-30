@@ -43,8 +43,8 @@ export default function Home() {
 
 			<About />
 			<Features />
-			<PlatformOwner />
 			<Testimonial />
+			<PlatformOwner />
 			<FAQ />
 			<Inivation />
 			<Contact />
