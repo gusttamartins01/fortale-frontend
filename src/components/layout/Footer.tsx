@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, Mails, MapPin } from 'lucide-react';
 import { BsLinkedin } from 'react-icons/bs';
 import { SiInstagram } from 'react-icons/si';
 import { Link } from 'react-router-dom';
@@ -47,7 +47,7 @@ export default function Footer() {
 							aria-label="Twitter do Fortalê"
 							className="rounded-full border border-blue-500 p-2.5 text-gray-100 transition-colors hover:border-amber-500 hover:text-amber-500"
 						>
-							<MessageCircle size={18} />
+							<Mail size={18} />
 						</a>
 					</div>
 				</div>
@@ -104,7 +104,7 @@ export default function Footer() {
 							href="mailto:contato@fortale.com.br"
 							className="flex items-start gap-3 transition-colors hover:text-white"
 						>
-							<Mail size={18} className="mt-1 shrink-0 text-amber-400" />
+							<Mails size={18} className="mt-1 shrink-0 text-amber-400" />
 							<span>contato@fortale.com.br</span>
 						</a>
 						<div className="flex items-start gap-3">
