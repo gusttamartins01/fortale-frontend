@@ -6,6 +6,8 @@ export default function Features() {
 					Descubra tudo o que Fortaleza pode oferecer
 				</h2>
 			</div>
+
+			<div className="mx-16 mt-6 grid grid-cols-4 items-center gap-10"></div>
 		</section>
 	);
 }
