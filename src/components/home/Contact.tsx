@@ -7,8 +7,8 @@ import ContactForm from '../ui/ContactForm';
 export default function Contact() {
 	return (
 		<section className="h-auto w-full bg-gray-100 pt-8 pb-28 border-t-2 border-black/10">
-			<div className="mx-auto max-w-6xl px-6 pt-8">
-				<h2 className="border-l-4 border-amber-600 py-2 pl-5 text-3xl font-bold text-amber-600 sm:text-4xl">
+			<div className="mx-12 max-w-8xl px-6 pt-8">
+				<h2 className="rounded-t-2xl border-l-4 border-amber-600 py-2 pl-5 text-3xl font-bold text-amber-600 sm:text-4xl">
 					Nossos contatos
 				</h2>
 
