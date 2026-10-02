@@ -11,13 +11,13 @@ export default function PlatformOwner() {
 			</div>
 
 			<div className="mx-16 mt-5 grid grid-cols-2 items-center gap-10">
-				<div className="flex items-center justify-start bg-gray-500/50 rounded-r-full rounded-l-full">
+				<div className="flex items-center justify-start bg-gray-300/50 rounded-r-full rounded-l-full">
 					<img
 						src={MeImg}
 						alt="Uma foto minha olhando para o lado direito."
 						width={400}
 						height={400}
-						className="rounded-4xl object-cover border-4 border-gray-600 transition-transform duration-500 ease-in-out hover:scale-105 bg-black/30"
+						className="rounded-2xl object-cover"
 					/>
 				</div>
 
